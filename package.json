@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "danger": "^10.6.6",
+    "husky": "^7.0.1"
+  },
+  "scripts": {
+  "prepush": "yarn build; yarn danger:prepush",
+  "danger:prepush": "yarn danger local --dangerfile dangerfile.lite.ts"
+}
+}
